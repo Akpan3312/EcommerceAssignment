@@ -1,14 +1,4 @@
-class Product {
-
-    val name: String
-    var price: Double
-    var quantityInStock: Int
-
-    constructor(name: String, price: Double, quantityInStock: Int) {
-        this.name = name
-        this.price = price
-        this.quantityInStock = quantityInStock
-    }
+class Product(val name: String, var price: Double, var quantityInStock: Int) {
 
     // Method to return product details
     fun productInfo(): String {
